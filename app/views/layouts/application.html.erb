@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cartografia Social Municipal</title>
+  <%= stylesheet_link_tag 'css/estilos.css' %>
+</head>
+<body>
+	<div id="contenedor">
+
+	<!-- Cabecera -->
+	<header id="cabecera">
+    </header>
+    <nav id="menu">
+    	<ul>
+        	<li><%= link_to(image_tag("usuarios.png",  :class =>"image",:id=>"icono1"),new_user_path) %>
+            	 
+               
+            	
+            </li>
+            
+            <li><%= link_to(image_tag("admin.png",  :class =>"image",:id=>"icono2"), users_path) %>
+            
+            </li>
+            
+            
+                   
+            
+        </ul>
+    </nav>
+
+<%= yield %>
+
+</body>
+</html>
+
